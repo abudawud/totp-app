@@ -3,4 +3,8 @@
     <string name="title_user">User</string>
     <string name="title_jadwal">Jadwal</string>
     <string name="title_nilai">Nilai</string>
+    <string name="app_head_title">Time-based OTP</string>
+    <string name="app_title_desc">Your application description here</string>
+    <string name="user_text_label">Nama Dosen</string>
+    <string name="nip_text_label">NIP</string>
 </resources>

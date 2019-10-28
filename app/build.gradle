@@ -4,8 +4,15 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 29
+
+    dataBinding {
+        enabled = true
+    }
+
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.skripsi.totpapp"
@@ -42,6 +49,9 @@ dependencies {
 
     // LiveData & ViewModel
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+    // Data binding
+    kapt "com.android.databinding:compiler:3.5.1"
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
